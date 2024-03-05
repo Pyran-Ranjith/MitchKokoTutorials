@@ -22,18 +22,14 @@ class RegScreen extends StatelessWidget {
 
               child: const Padding(
                 // padding: EdgeInsets.only(top: 60.0, left: 22),
-                padding:
-                 EdgeInsets.only(top: 10.0, left: 22),
-                 
-                // First title
+                padding: EdgeInsets.only(top: 10.0, left: 22),
                 child: Text(
-                  'Create an Account',
+                  'Create Your\nAccount',
                   style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-
               ),
             ),
 
@@ -56,7 +52,7 @@ class RegScreen extends StatelessWidget {
                       const TextField(
                         decoration: InputDecoration(
                             suffixIcon: Icon(Icons.check,color: Colors.grey,),
-                            label: Text('First Name',style: TextStyle(
+                            label: Text('Full Name',style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color:Color(0xffB81736),
                             ),)
@@ -65,7 +61,7 @@ class RegScreen extends StatelessWidget {
                       const TextField(
                         decoration: InputDecoration(
                             suffixIcon: Icon(Icons.check,color: Colors.grey,),
-                            label: Text('Email',style: TextStyle(
+                            label: Text('Phone or Gmail',style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color:Color(0xffB81736),
                             ),)

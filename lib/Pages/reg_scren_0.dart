@@ -10,36 +10,26 @@ class RegScreen extends StatelessWidget {
           children: [
             Container(
               height: double.infinity,
-              // height: 200,
-              // width: double.infinity,
-              width: double.maxFinite,
+              width: double.infinity,
               decoration: const BoxDecoration(
                 gradient: LinearGradient(colors: [
                   Color(0xffB81736),
                   Color(0xff281537),
                 ]),
               ),
-
               child: const Padding(
-                // padding: EdgeInsets.only(top: 60.0, left: 22),
-                padding:
-                 EdgeInsets.only(top: 10.0, left: 22),
-                 
-                // First title
+                padding: EdgeInsets.only(top: 60.0, left: 22),
                 child: Text(
-                  'Create an Account',
+                  'Create Your\nAccount',
                   style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-
               ),
             ),
-
             Padding(
-              // padding: const EdgeInsets.only(top: 150.0,bottom: 20.0, left: 10.0, right: 10.0),
-              padding: const EdgeInsets.only(top: 100.0,bottom: 20.0, left: 10.0, right: 10.0),
+              padding: const EdgeInsets.only(top: 200.0),
               child: Container(
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
@@ -56,7 +46,7 @@ class RegScreen extends StatelessWidget {
                       const TextField(
                         decoration: InputDecoration(
                             suffixIcon: Icon(Icons.check,color: Colors.grey,),
-                            label: Text('First Name',style: TextStyle(
+                            label: Text('Full Name',style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color:Color(0xffB81736),
                             ),)
@@ -65,7 +55,7 @@ class RegScreen extends StatelessWidget {
                       const TextField(
                         decoration: InputDecoration(
                             suffixIcon: Icon(Icons.check,color: Colors.grey,),
-                            label: Text('Email',style: TextStyle(
+                            label: Text('Phone or Gmail',style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color:Color(0xffB81736),
                             ),)
